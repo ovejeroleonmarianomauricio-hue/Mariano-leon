@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"] {
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            margin-top: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1b4f72;
+        }
+
+        p#mensaje, p#mensajeNota {
+            font-weight: bold;
+            color: #1e8449;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <label>Usuario</label> <input type="text" name="usuario"><br><br>
+
+    <label>Nombres:</label>
+    <input type="text" name="nom" id="nom"><br><br>
+
+    <label>Apellidos:</label>
+    <input type="text" name="ape" id="ape"><br><br>
+
+    <label>Correo electronico</label> <input type="email" name="email"><br><br>
+    <label>Contraseña</label> <input type="password" name="contrasena"><br><br>
+    <label>Edad oficial</label> <input type="number" name="edadoficial"><br><br>
+    <label>puntuacion</label> <input type="text" name="puntuacion"><br><br>
+    <label>Fecha de nacimiento</label> <input type="date" name="nacimiento"><br><br>
+    <label>hora de nacimiento</label> <input type="time" name="horanacimiento"><br><br>
+    <label>color favorito</label> <input type="color" name="colorfavorito"><br><br>
+
+    <h3>Quien ganó el mundial de fitbol del 2014?</h3>
+    <label>Alemania</label> <input type="radio" name="m"><br>
+    <label>Bolivia</label> <input type="radio" name="m"><br>
+    <label>Brasil</label> <input type="radio" name="m"><br>
+    <label>Francia</label> <input type="radio" name="m"><br><br>
+
+    <h3>Cuales son películas de acción?</h3>
+    <label>Juego de tronos</label> <input type="checkbox" name="pel" value="JT"><br>
+    <label>Rápidos y furiosos</label> <input type="checkbox" name="pel" value="RF"><br>
+    <label>Interstelar</label> <input type="checkbox" name="pel" value="INT"><br>
+    <label>El infierno verde</label> <input type="checkbox" name="pel" value="IV"><br>
+    <label>Sentencia de Muerte</label> <input type="checkbox" name="pel" value="SM"><br><br>
+
+    <label>Seleccione un archivo:</label>
+    <input type="file" name="archivo" accept=".xls,.xlsx"><br><br>
+
+    <label>Seleccione un valor:</label>
+    <input type="range" name="archivo" min="0" max="100" value="50"><br><br>
+
+    <button onclick="saludo()">Saludo</button>
+    <p id="mensaje"></p>
+
+    <br><br>
+    <label>Nota teórica (0 - 30):</label>
+    <input type="number" id="teorica" min="0" max="30"><br><br>
+
+    <label>Nota práctica (0 - 70):</label>
+    <input type="number" id="practica" min="0" max="70"><br><br>
+
+    <button onclick="calculodenota()">Nota final</button>
+    <p id="mensajeNota"></p>
+
+    <script src="j2.js"></script>
+
+</body>
+</html>
